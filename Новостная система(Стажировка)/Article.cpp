@@ -22,3 +22,8 @@ string Article::GetHeadLine()
 {
 	return _headLine;
 }
+
+void  Article::SetHeadLine(string newHeadLine)
+{
+	_headLine = newHeadLine;
+}
