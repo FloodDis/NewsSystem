@@ -1,0 +1,10 @@
+#include "Article.h"
+
+Article::Article()
+{
+	_ID = 0;
+	_headLine = "";
+	_type = News;
+	_text = "";
+}
+
