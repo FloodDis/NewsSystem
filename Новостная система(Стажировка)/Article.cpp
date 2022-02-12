@@ -42,3 +42,8 @@ string Article::GetText()
 {
 	return _text;
 }
+
+void Article::SetText(string newText)
+{
+	_text = newText;
+}
