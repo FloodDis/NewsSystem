@@ -12,4 +12,5 @@ public:
 	void AddArticle(Article newArticle);
 	void DeleteArticle(Article articleToDelete);
 	list<pair<int, string>> GetPopular(int articlesCount);
+	Article GetArticle(int id, string user);
 };
