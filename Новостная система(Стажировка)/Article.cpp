@@ -8,3 +8,7 @@ Article::Article()
 	_text = "";
 }
 
+int Article::GetID()
+{
+	return _ID;
+}
