@@ -17,3 +17,8 @@ void Article::SetID(int newID)
 {
 	_ID = newID;
 }
+
+string Article::GetHeadLine()
+{
+	return _headLine;
+}
