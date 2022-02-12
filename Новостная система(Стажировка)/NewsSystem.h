@@ -13,4 +13,5 @@ public:
 	void DeleteArticle(Article articleToDelete);
 	list<pair<int, string>> GetPopular(int articlesCount);
 	Article GetArticle(int id, string user);
+	Article GetRecommendation(string user);
 };
