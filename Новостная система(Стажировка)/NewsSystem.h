@@ -10,4 +10,5 @@ private:
 	RecommendationSystem _recommendationSystem;
 public:
 	void AddArticle(Article newArticle);
+	void DeleteArticle(Article articleToDelete);
 };
