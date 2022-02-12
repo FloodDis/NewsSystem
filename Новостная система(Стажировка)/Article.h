@@ -20,6 +20,6 @@ public:
 	Article();
 	int GetID();
 	void SetID(int newID);
-	string GetHeadLine(string newHeadLine);
-	void SetHeadLine();
+	string GetHeadLine();
+	void SetHeadLine(string newHeadLine);
 };
