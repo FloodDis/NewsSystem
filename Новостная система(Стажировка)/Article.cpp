@@ -33,3 +33,7 @@ TypeOfArticle Article::GetTypeOfArticle()
 	return _type;
 }
 
+void Article::SetTypeOfArticle(TypeOfArticle newType)
+{
+	_type = newType;
+}
