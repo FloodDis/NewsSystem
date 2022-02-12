@@ -25,4 +25,5 @@ public:
 	TypeOfArticle GetTypeOfArticle();
 	void SetTypeOfArticle(TypeOfArticle newType);
 	string GetText();
+	string SetText(string newText);
 };
