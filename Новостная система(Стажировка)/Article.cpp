@@ -37,3 +37,8 @@ void Article::SetTypeOfArticle(TypeOfArticle newType)
 {
 	_type = newType;
 }
+
+string Article::GetText()
+{
+	return _text;
+}
