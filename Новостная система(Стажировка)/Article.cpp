@@ -12,3 +12,8 @@ int Article::GetID()
 {
 	return _ID;
 }
+
+void Article::SetID(int newID)
+{
+	_ID = newID;
+}
