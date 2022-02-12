@@ -11,4 +11,5 @@ private:
 public:
 	RecommendationSystem();
 	void FixReading(string user, Article newArticle);
+	Article GetRecommendation(string user, list<Article> avaibleArticles);
 };
