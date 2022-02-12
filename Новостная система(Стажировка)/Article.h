@@ -24,4 +24,5 @@ public:
 	void SetHeadLine(string newHeadLine);
 	TypeOfArticle GetTypeOfArticle();
 	void SetTypeOfArticle(TypeOfArticle newType);
+	string GetText();
 };
