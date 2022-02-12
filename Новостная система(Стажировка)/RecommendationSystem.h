@@ -7,9 +7,8 @@ using namespace std;
 class RecommendationSystem
 {
 private:
-	map<string, list<Article>> _redList;
+	map<string, list<Article>> _readList;
 public:
-	RecommendationSystem();
 	void FixReading(string user, Article newArticle);
 	Article GetRecommendation(string user, list<Article> avaibleArticles);
 };
