@@ -10,5 +10,5 @@ private:
 	map<string, list<Article>> _redList;
 public:
 	RecommendationSystem();
-
+	void FixReading(string user, Article newArticle);
 };
