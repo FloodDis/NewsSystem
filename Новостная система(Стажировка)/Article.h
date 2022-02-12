@@ -22,4 +22,5 @@ public:
 	void SetID(int newID);
 	string GetHeadLine();
 	void SetHeadLine(string newHeadLine);
+	void SetTypeOfArticle(TypeOfArticle newType);
 };
