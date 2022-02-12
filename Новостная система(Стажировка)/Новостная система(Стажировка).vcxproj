@@ -143,6 +143,11 @@
     <ClInclude Include="NewsSystem.h" />
     <ClInclude Include="RecommendationSystem.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Article.cpp" />
+    <ClCompile Include="NewsSystem.cpp" />
+    <ClCompile Include="RecommendationSystem.cpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
