@@ -27,3 +27,9 @@ void  Article::SetHeadLine(string newHeadLine)
 {
 	_headLine = newHeadLine;
 }
+
+TypeOfArticle Article::GetTypeOfArticle()
+{
+	return _type;
+}
+
