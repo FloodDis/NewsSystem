@@ -12,7 +12,7 @@ enum TypeOfArticle
 class Article
 {
 private:
-	int _ID;
+	int _id;
 	string _headLine;
 	TypeOfArticle _type;
 	string _text;
