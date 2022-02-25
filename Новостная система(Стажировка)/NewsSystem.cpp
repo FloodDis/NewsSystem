@@ -8,4 +8,5 @@ Article NewsSystem::GetRecommendation(string user)
 void NewsSystem::AddArticle(Article newArticle)
 {
 	_articles.push_back(newArticle);
+	_popularity.insert({ newArticle.GetID(),0 });
 }
