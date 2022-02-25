@@ -27,3 +27,9 @@ void NewsSystem::DeleteArticle(Article articleToDelete)
 	it1 = _popularity.find(idToDelete);
 	_popularity.erase(it1);
 }
+
+list<pair<int, string>> NewsSystem::GetPopular(int articlesCount)
+{
+	list<pair<int, string>> popular;
+
+}
