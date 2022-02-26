@@ -54,3 +54,19 @@ list<pair<int, string>> NewsSystem::GetPopular(int articlesCount)
 		}
 	}
 }
+
+Article NewsSystem::GetArticle(int id, string user)
+{
+	list<Article>::iterator it;
+	for (it = _articles.begin(); it != _articles.end(); it++)
+	{
+		if (it->GetID() == id)
+		{
+			int popularity = _popularity.find(id)->second;
+			popularity++;
+			_popularity[id] = popularity;
+			_recommendationSystem.FixReading(user, *it);
+			return *it;
+		}
+	}
+}
