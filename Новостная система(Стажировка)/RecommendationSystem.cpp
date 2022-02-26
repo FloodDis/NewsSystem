@@ -65,18 +65,18 @@ Article RecommendationSystem::GetRecommendation(string user,
 		}
 	}
 
-	it = _readList.begin();
+	it = _readList.find(user);
 
-	for (it = _readList.begin(); it != _readList.end(); it++)
+	for (auto iter1 = it->second.begin(); iter1 != it->second.end(); iter1++)
 	{
 		for (auto iter2 = avaibleArticles.begin(); iter2 != avaibleArticles.end(); iter2++)
 		{
-			//Выдает ошибку при сравнивании итераторов
-			if (it->second == iter2)
+			if (iter1->GetID() == iter2->GetID())
 			{
 				iter2 = avaibleArticles.erase(iter2);
 			}
 		}
 	}
+
 	return *avaibleArticles.begin();
 }

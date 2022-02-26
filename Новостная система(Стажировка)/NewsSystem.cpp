@@ -31,5 +31,10 @@ void NewsSystem::DeleteArticle(Article articleToDelete)
 list<pair<int, string>> NewsSystem::GetPopular(int articlesCount)
 {
 	list<pair<int, string>> popular;
+	map <int, int> ::iterator it1;
+	
+	for (int n = 0; n < articlesCount; n++)
+	{
 
+	}
 }
