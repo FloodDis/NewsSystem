@@ -1,6 +1,7 @@
 #pragma once
 #include "Article.h"
 #include "RecommendationSystem.h"
+#include <vector>
 
 class NewsSystem
 {

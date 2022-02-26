@@ -32,9 +32,24 @@ list<pair<int, string>> NewsSystem::GetPopular(int articlesCount)
 {
 	list<pair<int, string>> popular;
 	map <int, int> ::iterator it1;
-	
-	for (int n = 0; n < articlesCount; n++)
+	vector<map <int, int> ::iterator> iterators;
+	int j = 0;
+	for (it1 = _popularity.begin(); it1 != _popularity.end(); it1++)
 	{
-
+		iterators.resize(j + 1);
+		iterators.push_back(it1);
+	}
+	map <int, int> ::iterator temp;
+	for (int i = 0; i < iterators.size() - 1; i++)
+	{
+		for (int j = 0; j < iterators.size() - 1 - i; j++)
+		{
+			if (iterators[j]->second > iterators[j + 1]->second)
+			{
+				temp = iterators[j];
+				iterators[j] = iterators[j + 1];
+				iterators[j + 1] = temp;
+			}
+		}
 	}
 }
