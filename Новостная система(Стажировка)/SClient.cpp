@@ -20,6 +20,7 @@ void SClient::handle()
 		int k = recv(c_sock, buffer, sizeof(buffer), NULL);
 		if (k > 0) {
 			printf(buffer);
+			Menu();
 		}
 		Sleep(30);
 	}

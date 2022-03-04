@@ -13,7 +13,7 @@ SServer::~SServer()
 void SServer::startServer() {
 	if (WSAStartup(MAKEWORD(2, 2), &wData) == 0)
 	{
-		printf("WSA Startup succes\n");
+		printf("WSA Startup success\n");
 	}
 	SOCKADDR_IN addr;
 	int addrl = sizeof(addr);
@@ -26,11 +26,11 @@ void SServer::startServer() {
 	}
 
 	if (bind(this_s, (struct sockaddr*)&addr, sizeof(addr)) != SOCKET_ERROR) {
-		printf("Socket succed binded\n");
+		printf("Socket succeed binded\n");
 	}
 
 	if (listen(this_s, SOMAXCONN) != SOCKET_ERROR) {
-		printf("Start listening at port%u\n", ntohs(addr.sin_port));
+		printf("Start listening at port %u\n", ntohs(addr.sin_port));
 	}
 	handle();
 }
@@ -38,7 +38,7 @@ void SServer::startServer() {
 void SServer::closeServer() {
 	closesocket(this_s);
 	WSACleanup();
-	cout << "Server was stoped. You can close app" << endl;
+	cout << "Server was stopped. You can close app" << endl;
 }
 
 
