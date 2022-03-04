@@ -2,10 +2,12 @@
 #include "includes.h"
 
 
-SServer::SServer() {
+SServer::SServer() 
+{
 }
 
-SServer::~SServer() {
+SServer::~SServer() 
+{
 }
 
 void SServer::startServer() {
@@ -28,7 +30,7 @@ void SServer::startServer() {
 	}
 
 	if (listen(this_s, SOMAXCONN) != SOCKET_ERROR) {
-		printf("Start listenin at port%u\n", ntohs(addr.sin_port));
+		printf("Start listening at port%u\n", ntohs(addr.sin_port));
 	}
 	handle();
 }

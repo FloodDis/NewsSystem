@@ -2,7 +2,7 @@
 
 Article::Article()
 {
-	_ID = 0;
+	_id = 0;
 	_headLine = "";
 	_type = News;
 	_text = "";
@@ -10,12 +10,12 @@ Article::Article()
 
 int Article::GetID()
 {
-	return _ID;
+	return _id;
 }
 
 void Article::SetID(int newID)
 {
-	_ID = newID;
+	_id = newID;
 }
 
 string Article::GetHeadLine()

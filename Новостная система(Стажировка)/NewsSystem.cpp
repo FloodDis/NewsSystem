@@ -28,7 +28,6 @@ void NewsSystem::DeleteArticle(Article articleToDelete)
 	_popularity.erase(it1);
 }
 
-//TODO: дописать метод
 list<pair<int, string>> NewsSystem::GetPopular(int articlesCount)
 {
 	list<pair<int, string>> popular;
@@ -53,6 +52,22 @@ list<pair<int, string>> NewsSystem::GetPopular(int articlesCount)
 			}
 		}
 	}
+
+	for (int i = 0; i < iterators.size(); i++)
+	{
+		pair <int, string> buffer;
+		list<Article>::iterator it2;
+		for (auto it = _articles.begin(); it != _articles.end(); it++)
+		{
+			if (it->GetID() == iterators[i]->first)
+			{
+				it2 = it;
+			}
+		}
+		buffer = make_pair(iterators[i]->first,it2->GetHeadLine());
+		popular.push_back(buffer);
+	}
+	return popular;
 }
 
 Article NewsSystem::GetArticle(int id, string user)
@@ -67,6 +82,10 @@ Article NewsSystem::GetArticle(int id, string user)
 			_popularity[id] = popularity;
 			_recommendationSystem.FixReading(user, *it);
 			return *it;
+		}
+		else
+		{
+			throw "Article isn't found";
 		}
 	}
 }
