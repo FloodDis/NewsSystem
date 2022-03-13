@@ -6,8 +6,7 @@ void Menu()
 	{
 		int option;
 		cout << "Choose an option:\n"
-			<< "1) ";
+			<< "1)  ";
 	}
 	
-
 }
